@@ -12,7 +12,6 @@
 ==/UserStyle== */
 
 @-moz-document domain("codeberg.org") {
-    /* Quelltext hier eingeben... */
     if (theme=="Latte") {
         $type = light
         
@@ -136,6 +135,7 @@
     
     
    :root {
+	   
        --color-body: $base;
        --color-text: $text;
        --color-text-light: $subtext0;
@@ -146,7 +146,7 @@
        --color-text-dark-3: $subtext1;
        --color-secondary: $surface1;
        --color-caret: $text;
-       --color-navbar: $surface0;;
+       --color-navbar: $surface0;
        --color-footer: $surface0;
        
        --color-red: $red;
@@ -174,7 +174,7 @@
        --color-black: $crust;
        --color-white: $text;
        
-       --color-primary: $blue
+       --color-primary: $blue;
        
        --color-console-fg: $text;
        --color-console-bg: $base;
@@ -352,7 +352,7 @@
         .chroma .nx {
             color: $text;
         }
-        
+		
         .chroma .nf {
             color: $yellow;
         }
