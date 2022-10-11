@@ -212,6 +212,17 @@
        --color-button: $overlay0;
        --color-light-border: $surface1;
        --color-dark-border: $overlay0;
+       
+       --color-diff-removed-row-bg: rgba($red, 0.2)!important;
+       --color-diff-removed-row-border: rgba($red, 0.2)!important;
+       --color-diff-removed-word-bg: rgba($red, 0.4)!important;
+       
+       --color-diff-added-row-bg: rgba($green, 0.2)!important;
+       --color-diff-added-row-border: rgba($green, 0.2)!important;
+       --color-diff-added-word-bg: rgba($green, 0.4)!important;
+       
+       --color-code-bg: $surface0;
+       --color-expand-button: $surface1;
    }
     
     
@@ -295,6 +306,47 @@
         .ui.horizontal.segments>.segment {
             background-color: $surface0;
         }
+        
+        .tag-code td.lines-type-marker, td.blob-hunk {
+             color: $text!important;
+        }
+        
+        .tag-code, .tag-code td {
+            background: $surface1!important;
+        }
+        
+        .tag-code td.lines-num {
+            background-color: $surface1!important;
+        }
+        
+        .chroma .sb {
+            color: $subtext1;
+        }
+        
+        .chroma .nt {
+            color: rgba($mauve, 0.7)!important;
+        }
+        
+        .chroma .na {
+            color: rgba($teal, 0.7)!important;
+        }
+        
+        .chroma .nb {
+            color: rgba($mauve, 0.7);
+        }
+        
+        .chroma .s2 {
+            color: rgba($teal, 0.7);
+        }
+        
+        .chroma .si {
+            color: rgba($peach, 0.6);
+        }
+        
+        .chroma .nv {
+            color: rgba($peach, 0.6);
+        }
+        
     }
     
     
