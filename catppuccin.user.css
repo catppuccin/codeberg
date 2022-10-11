@@ -221,6 +221,8 @@
        --color-diff-added-row-border: rgba($green, 0.2)!important;
        --color-diff-added-word-bg: rgba($green, 0.4)!important;
        
+       --color-diff-inactive: $surface1;
+       
        --color-code-bg: $surface0;
        --color-expand-button: $surface1;
    }
@@ -347,8 +349,16 @@
             color: rgba($peach, 0.6);
         }
         
+        .chroma .nx {
+            color: $text;
+        }
+        
+        .chroma .nf {
+            color: $yellow;
+        }
+        
+        .chroma .s {
+            color: rgba($teal, 0.7);
+        }
+        
     }
-    
-    
-    
-}
