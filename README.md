@@ -9,6 +9,7 @@
 	<a href="https://github.com/catppuccin/codeberg/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/codeberg?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
 	<a href="https://github.com/catppuccin/codeberg/issues"><img src="https://img.shields.io/github/issues/catppuccin/codeberg?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
 	<a href="https://github.com/catppuccin/codeberg/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/codeberg?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/codeberg/main/catppuccin.user.css"><img src="https://img.shields.io/badge/stylus-install-cba6f7?colorA=363a4f&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -28,6 +29,11 @@
 2. Create a new custom style that applies to `codeberg.org`.
 3. Copy the contents of [catppuccin.user.css](catppuccin.user.css) and paste it on the created style.
 
+
+## FAQ
+
+- Q: How do I change the accent color?
+- A: Changing `--color-primary` (Line 177) to any other color should change the accent color in most places. 
 
 ## 💝 Thanks to
 
