@@ -279,7 +279,21 @@
     #navbar .item {
         color: $surface0;
     }
-   
+    .ui.labeled.button.disabled>.button, .ui.basic.buttons .button, .ui.basic.button {
+        color: $text;
+        background: $base;
+    }
+    .ui.labeled.button.disabled>.button:hover, .ui.basic.buttons .button:hover, .ui.basic.button:hover {
+        background: $surface0;
+    }
+    .ui.basic.labels .label, .ui.basic.label {
+        background: $surface0;
+        color: $text;
+    }
+    .ui.basic.labels .label:hover, .ui.basic.label:hover {
+        background: $surface1!important;
+        color: $text!important;
+    }
     
     * {
         caret-color: $text;
