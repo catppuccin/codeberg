@@ -419,7 +419,7 @@
         .ui.right.floated.secondary.filter.menu  .ui.right.dropdown,
         .repository #clone-panel button:first-of-type {
             background-color: hsla($accent, 0.7);
-            color: $text;
+            color: $mantle;
         }
     
         .ui.basic.button:hover,
@@ -440,7 +440,7 @@
         
         .ui.basic.label:not(.tag):not(.image):not(.ribbon) {
             background-color: hsla($accent, 0.7);
-            color: $text;
+            color: $mantle;
         }
         
         .ui.basic.label:not(.tag):not(.image):not(.ribbon):hover {
@@ -474,4 +474,3 @@
         }
     }
 }
-
