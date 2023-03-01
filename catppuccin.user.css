@@ -260,7 +260,7 @@
        --color-expand-button: $surface1;
        
     
-       --color-secondary-dark-2: rgba($sapphire, 0.3);
+       --color-secondary-dark-2: rgba($accent, 0.3);
        
        
        /* Code Contribution colors ig */
@@ -428,7 +428,8 @@
         .ui.right.floated.secondary.filter.menu  .ui.right.dropdown:hover,
         .repository #clone-panel button:first-of-type:hover,
         .ui.secondary.filter.menu.labels .ui.dropdown.jump.item:hover,
-        .ui.menu:not(.ui.tabular.menu) > .item:hover{
+        .ui.menu:not(.ui.tabular.menu) > .item:hover,
+        .ui.primary.button:hover {
             background-color: hsla($accent, 0.9)!important;
             color: $text;
         }
@@ -446,6 +447,20 @@
         .ui.basic.label:not(.tag):not(.image):not(.ribbon):hover {
             background-color: hsla($accent, 0.8);
             color: $text;
+        }
+        
+        .ui.labeled.button.tooltip.disabled {
+            background-color: hsla($accent, 1.0);
+        }
+        
+        .ui.labeled.button.tooltip.disabled, .ui.compact.small.basic.button {
+            background-color: hsla($accent, 1.0);
+            color: $mantle;
+        }
+        
+        .ui.green.button:hover,
+        .ui.green.buttons .button:hover {
+            background-color: $green;
         }
         
         .repository.file.list #repo-files-table tr:hover{
@@ -469,8 +484,9 @@
         }
         
         
-        .repository.release #release-list > li .detail .download .list {
-            background-color: hexa(var(--primary-color), 0.1);
+        .repository.release #release-list > li .detail .download .list li {
+            background-color: hsla($accent, 0.2);
+            border-color: $base;
         }
     }
 }
