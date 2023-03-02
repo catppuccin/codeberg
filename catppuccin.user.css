@@ -448,6 +448,15 @@
             background-color: hsla($accent, 0.8);
             color: $text;
         }
+		
+		.ui.labeled.button.tooltip.disabled {
+            background-color: hsla($accent, 1.0);
+        }
+        
+        .ui.labeled.button.tooltip.disabled, .ui.compact.small.basic.button {
+            background-color: hsla($accent, 1.0);
+            color: $mantle;
+        }
         
         .ui.labeled.button.tooltip.disabled {
             background-color: hsla($accent, 1.0);
