@@ -9,6 +9,8 @@
 
 
 @var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha*"]
+
+@var checkbox navbar-color "Use dark navbar-color" 0
 ==/UserStyle== */
 
 @-moz-document domain("codeberg.org") {
@@ -232,13 +234,24 @@
         color: $text;
         
     }
-   
+  
+    div#navbar.ui.container {
+        background-color: $blue !important;
+        color: $base !important;
+    }
+    
+    if navbar-color {
+        div#navbar.ui.container {
+            background-color: $mantle !important;
+            color: $text !important;
+        }
+    }
+
     th,
     textarea,
     h4.ui.top.attached.error.header,
     div.ui.red.message,
     div.ui.segment.sub-menu.repository-menu,
-    div#navbar.ui.container,
     nav.navbar,
     div.sidebar,
     div.sidebar-menu,
