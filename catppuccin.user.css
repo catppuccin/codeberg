@@ -2,7 +2,7 @@
 @name Codeberg Catppuccin
 @namespace github.com/catppuccin/userstyles/styles/codeberg
 @homepageURL https://github.com/catppuccin/userstyles
-@version 0.2.0
+@version 2.0.0
 @updateURL https://github.com/catppuccin/userstyles/raw/main/styles/codeberg/catppuccin.user.css
 @description Soothing pastel theme for Codeberg
 @author Catppuccin
@@ -245,7 +245,7 @@
         --color-primary-light-4: darken(@@accent, 15%);
         --color-secondary-alpha-70: rgba(@@accent, 0.3);
         --color-primary-light-1: hsla(@@accent, 0.3);
-        --color-hover: @base;
+        --color-hover: @base!important;
         --color-light: lighten(@base, 10%);
         .ui.green.button {
             background-color: @green;
@@ -254,6 +254,199 @@
 
         .ui.labeled.icon.button > .icon {
             background-color: darken(@@accent, 15%);
+        }
+
+        th,
+        textarea,
+        h4.ui.top.attached.error.header,
+        div.ui.red.message,
+        div.ui.segment.sub-menu.repository-menu,
+        nav.navbar,
+        div.sidebar,
+        div.sidebar-menu,
+        div.card,
+        div.menu.left.transition.visible,
+        div.menu.user-menu.left.transition.visible,
+        a.item.active input,
+        div.ui.dropdown.icon.button,
+        div.ui.borderless.pagination.menu.narrow,
+        span.name,
+        blockquote.alert {
+            background-color: @surface1;
+            color: @text;
+        }
+
+        div.extra.content.word-break,
+        td.name,
+        td.message,
+        td.text {
+            border-color: @surface1 !important;
+        }
+
+        div.ui.top.attached.header.clearing.segment.pr.commit-header,
+        footer {
+            background-color: @mantle !important;
+        }
+
+        div.ui.compact.tiny.menu,
+        div.ui.secondary.pointing.tabular.top.attached.borderless.menu.stackable.new-menu.navbar,
+        div.ui.attached.segment,
+        div.ui.borderless.pagination.menu,
+        div.ui.two.item.tabable.menu,
+        div.ui.secondary.tiny.pointing.borderless.menu.center.grid.repos-filter,
+        div.header-wrapper,
+        div.ui.attached.segment.df.ac.sb.py-2.commit-header-row.fw,
+        div.file-view.markup.markdown,
+        div.ui.attached.segment.repos-search,
+        div.ui.attached.table.segment.rounded-bottom {
+            background-color: @base !important;
+        }
+
+        span.ui.grey.label.ml-3,
+        div.ui.circular.mini.grey.label,
+        div.divider,
+        button.btn.btn-primary,
+        div.ui.language.bottom.floating.slide.up.dropdown.link.item.button {
+            background-color: @surface0 !important;
+        }
+
+        tr {
+            background-color: @base !important;
+        }
+
+        .blob-excerpt.lines-code {
+            background-color: @mantle !important;
+        }
+
+        .chroma.lines-code {
+            background-color: transparent !important;
+        }
+
+        .add-code {
+            background-color: alpha(@green, 0.1) !important;
+        }
+
+        .added-code {
+            background-color: alpha(@green, 0.15) !important;
+            color: @text !important;
+        }
+
+        .del-code {
+            background-color: alpha(@red, 0.1) !important;
+        }
+
+        .removed-code {
+            background-color: alpha(@red, 0.15) !important;
+            color: @text !important;
+        }
+
+        code.code-inner {
+            color: @overlay1 !important;
+        }
+
+        tr.tag-code.nl-0.ol-0,
+        td.lines-num,
+        td.lines-type-marker {
+            background-color: alpha(@blue, 0.1) !important;
+        }
+
+        kbd,
+        code {
+            background-color: transparent !important;
+            color: @text !important;
+        }
+
+        span.c1 {
+            color: @overlay1 !important;
+        }
+
+        span.s1 {
+            color: @peach !important;
+        }
+
+        span.token.string,
+        span.s2 {
+            color: @green !important;
+        }
+
+        span.n {
+            color: @text !important;
+        }
+
+        span.o,
+        span.kc,
+        span.kd,
+        span.kr {
+            color: @red !important;
+        }
+
+        span.nf {
+            color: @blue !important;
+        }
+
+        span.token.function,
+        span.mi {
+            color: @teal !important;
+        }
+
+        nav.navbar {
+            border: none !important;
+        }
+
+        pre {
+            background-color: @mantle !important;
+            border-color: @blue !important;
+        }
+
+        a.ui.primary.sha.label,
+        span.ui.primary.sha.label {
+            background-color: @mantle !important;
+        }
+
+        .ui.table {
+            color: @text;
+        }
+
+        .repository-summary {
+            background-color: @surface0;
+        }
+
+        .ui.green.button {
+            background-color: @green;
+            color: @base;
+        }
+
+        .ui.red.button {
+            background-color: @red;
+            color: @base;
+            border-color: @overlay0;
+        }
+
+        .ui.basic.red.button {
+            color: @red;
+        }
+
+        .ui.negative.button {
+            background-color: @red;
+            color: @base;
+        }
+
+        .ui.basic.green.button {
+            color: @green;
+        }
+
+        .ui.breadcrumb {
+            color: @text;
+        }
+
+        .following.bar #navbar {
+            background-color: @@accent !important;
+        }
+
+        
+
+        * {
+            caret-color: @text;
         }
     }
 
