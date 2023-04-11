@@ -162,7 +162,7 @@
         --color-body: @base;
         --color-text: @text;
         --color-text-light: @subtext0;
-        --color-text-light-2: @subtext1;
+        --color-text-light-2: @subtext0;
         --color-text-light-3: @subtext1;
         --color-text-dark: @subtext0;
         --color-text-dark-2: @subtext1;
@@ -242,7 +242,9 @@
         --color-primary-light-4: darken(@@accent, 15%);
         --color-secondary-alpha-70: rgba(@@accent, 0.3);
         --color-primary-light-1: hsla(@@accent, 0.3);
-        --color-hover: hsla(@@accent, 0.4);
+        --color-hover: @base;
+        
+        --color-light: lighten(@base, 10%);
     }
     /*  Application of the Theme
   *  The values below are examples and may need to be adapted.
