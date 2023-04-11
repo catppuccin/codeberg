@@ -43,6 +43,7 @@
             @mantle: #e6e9ef;
             @crust: #dce0e8;
         }
+
         @frappe: {
             @rosewater: #f2d5cf;
             @flamingo: #eebebe;
@@ -71,6 +72,7 @@
             @mantle: #292c3c;
             @crust: #232634;
         }
+
         @macchiato: {
             @rosewater: #f4dbd6;
             @flamingo: #f0c6c6;
@@ -99,6 +101,7 @@
             @mantle: #1e2030;
             @crust: #181926;
         }
+
         @mocha: {
             @rosewater: #f5e0dc;
             @flamingo: #f2cdcd;
@@ -128,6 +131,7 @@
             @crust: #11111b;
         }
     }
+
     /*  Userstyle as Mixin
    *  This takes the following Parameters:
    *  @lookup – which is the desired Flavour
@@ -232,7 +236,6 @@
         --color-code-bg: @surface0;
         --color-expand-button: @surface1;
         --color-secondary-dark-2: rgba(@@accent, 0.3);
-        
         --color-secondary-light-1: @surface0;
         --color-secondary-dark-1: @mantle;
         /* Code Contribution colors ig */
@@ -243,9 +246,17 @@
         --color-secondary-alpha-70: rgba(@@accent, 0.3);
         --color-primary-light-1: hsla(@@accent, 0.3);
         --color-hover: @base;
-        
         --color-light: lighten(@base, 10%);
+        .ui.green.button {
+            background-color: @green;
+            color: @mantle;
+        }
+
+        .ui.labeled.icon.button > .icon {
+            background-color: darken(@@accent, 15%);
+        }
     }
+
     /*  Application of the Theme
   *  The values below are examples and may need to be adapted.
   *  To apply the correct Theming call the above defined Mixin and pass
@@ -254,14 +265,17 @@
     .theme-codeberg-light {
         #catppuccin(@lightFlavour, @accentColour);
     }
+
     @media (prefers-color-scheme: light) {
         .theme-codeberg-auto {
             #catppuccin(@lightFlavour, @accentColour);
         }
     }
+
     .theme-codeberg-dark {
         #catppuccin(@darkFlavour, @accentColour);
     }
+
     @media (prefers-color-scheme: dark) {
         .theme-codeberg-auto {
             #catppuccin(@darkFlavour, @accentColour);
